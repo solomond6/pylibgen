@@ -16,10 +16,24 @@ MIRRORS = {
         "&phrase={phrase}",
         "http://libgen.io/json.php" "?ids={ids}" "&fields={fields}",
     ),
+    "gen.lib.rus.ec": __Mirror(
+        "gen.lib.rus.ec",
+        "http://gen.lib.rus.ec/search.php"
+        "?req={req}"
+        "&page={page}"
+        "&res={per_page}"
+        "&column={mode}"
+        "&lg_topic={lg_topic}"
+        "&view={view}"
+        "&open={open}"
+        "&phrase={phrase}",
+        "http://gen.lib.rus.ec/json.php" "?ids={ids}" "&fields={fields}",
+    ),
     # TODO gen.lib.rus.ec support
 }
 
-DEFAULT_MIRROR = "libgen.io"
+DEFAULT_MIRROR = "gen.lib.rus.ec"
+#DEFAULT_MIRROR = "libgen.io"
 
 # these query parameters for mirror/search.php are pinned.
 SEARCH_BASE_PARAMS = {
